@@ -9,23 +9,26 @@
     <a href="aboutus.html">About us</a>
     <br />
     <img src="img/signup.jpg" width="300px" title="write your information to log in"/>
-    <form>
+    <form method="post">
         <label for="username">Username:</label><br />
-        <input type="text" id="username" /><br />
+        <input type="text" id="username" name="username" placeholder="It should be unique.."/ required><br />
         <label for="firstname">First name:</label><br />
-        <input type="text" id="firstname"/><br />
+        <input type="text" id="firstname" name="firstn" required/><br />
         <label for="lastname">Last name:</label><br />
-        <input type="text" id="lastname"/><br />
+        <input type="text" id="lastname" name="lastn" required/><br />
         <label for="date">Date of birth:</label><br />
-        <input type="date" id="date"/><br />
+        <input type="date" id="date" name="date" required/><br />
+        <label for="gender">Gender :</label>
+        <label for="male">Male .</label><input id="male" type="radio" name="gender" value="1" />
+        <label for="female">Female .</label><input id="female" type="radio" name="gender" value="2" /><br />
         <label for="phone">Phone:</label><br />
-        <input type="number" id="phone" /><br />
+        <input type="number" id="phone" name="phone" required/><br />
         <label for="address">Address:</label><br />
-        <input type="text" id="address" /><br />
+        <input type="text" id="address" name="address" required/><br />
         <label for="email">Email:</label><br />
-        <input type="email" id="email"/><br />
+        <input type="email" id="email" name="email" required/><br />
         <label for="password">Password:</label><br />
-        <input type="password" id="password" /><br />
+        <input type="password" id="password" name="password" placeholder="Make it strong.." required/><br />
         <br />
         <input type="submit" value="Sign up" />
         <input type="reset" value="Reset" />

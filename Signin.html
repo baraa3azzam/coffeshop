@@ -9,12 +9,12 @@
     <a href="aboutus.html">About us</a>
     <br />
     <img src="img/login.png" width="300px" title="write your information to log in"/>
-    <form>
+    <form method="post">
         <label for="email">Email:</label><br />
-        <input type="email" id="email"/>
+        <input type="email" id="email" name="email" required/>
         <br />
         <label for="password">Password:</label><br/>
-        <input type="password" id="password"/>
+        <input type="password" id="password" name="password" required/>
         <br />
         <br />
         <input type="submit" value="Log in"/>
